@@ -1,6 +1,6 @@
 <?php
 /*
- * description: returns date
+ * description: returns daterange
  * usage: [+phx:input=`[+start+]-[+end+]`:daterange+]
  * 
  */
