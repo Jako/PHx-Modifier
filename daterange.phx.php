@@ -18,7 +18,9 @@ if (!isset($dates[1])) {
 }
 $end = strftime($format[0].$format[1].$format[2], 0 + $dates[1]);
 
-if (date('d', ($dates[1] - $dates[0])) == 1 && date('m', ($dates[1] - $dates[0])) == 1 && date('Y', ($dates[1] - $dates[0])) == 1970) {
+if (date('Y', $dates[0]) != date('Y', $dates[1])) {
+	$start = strftime($format[0].$format[1].$format[2], 0 + $dates[0]).'–';
+} elseif (date('d', ($dates[1] - $dates[0])) == 1 && date('m', ($dates[1] - $dates[0])) == 1 && date('Y', ($dates[1] - $dates[0])) == 1970) {
 	$start = '';
 } elseif (date('d', ($dates[1] - $dates[0])) > 1 && date('m', ($dates[1] - $dates[0])) == 1 && date('Y', ($dates[1] - $dates[0])) == 1970) {
 	$start = strftime($format[0], 0 + $dates[0]).'–';
