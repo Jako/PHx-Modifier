@@ -2,14 +2,18 @@
 /*
  * description: swich for PHx
  * reason:      The internal select modifier of PHx does not provide a default option
- * usage:       [+id:switch=`1:{{Chunk}}|2:[*DocVar*]|default:[+TemplateVar+]+]
+ * usage:       [+string:switch=`xx:{{Chunk}}|yy:[*DocVar*]|default:[+TemplateVar+]+]
  */
 
 $switches = explode('|', $options);
+$default = '';
 foreach ($switches as $switch) {
-    $switch = explode(':', $switch);
-    if ($output == $switch[0] || $switch[0] == 'default')
-        return $switch[1];
+	$switch = explode(':', $switch);
+	if ($switch[0] == $output) {
+		return $switch[1];
+	} elseif ($switch[0] == 'default') {
+		$default = $switch[1];
+	}
 }
-return '';
+return $default;
 ?>
