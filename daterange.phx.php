@@ -17,13 +17,13 @@ if (!isset($dates[1])) {
 }
 $end = strftime($format[0] . $format[1] . $format[2], 0 + $dates[1]);
 
-$start_day = date('d', $dates[0]);
-$start_month = date('m', $dates[0]);
-$start_year = date('Y', $dates[0]);
+$start_day = date('d', 0 + $dates[0]);
+$start_month = date('m', 0 + $dates[0]);
+$start_year = date('Y', 0 + $dates[0]);
 
-$end_day = date('d', $dates[1]);
-$end_month = date('m', $dates[1]);
-$end_year = date('Y', $dates[1]);
+$end_day = date('d', 0 + $dates[1]);
+$end_month = date('m', 0 + $dates[1]);
+$end_year = date('Y', 0 + $dates[1]);
 
 if ($start_year != $end_year) {
 	$start = strftime($format[0] . $format[1] . $format[2], 0 + $dates[0]) . '-';
