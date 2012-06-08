@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
  * description: swich for PHx
  * reason:      The internal select modifier of PHx does not provide a default option

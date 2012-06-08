@@ -5,7 +5,7 @@
  * usage:       [+phx:iterate=`countername`+]
  */
 
-$countername = ($options) ? 'phx_'.$options : 'phx_iterate_counter';
+$countername = ($options) ? 'phx_' . $options : 'phx_iterate_counter';
 
 if (isset($GLOBALS[$countername])) {
 	$GLOBALS[$countername]++;

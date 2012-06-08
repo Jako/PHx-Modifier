@@ -1,5 +1,5 @@
-<?php 
-/* 
+<?php
+/*
  * description: Returns the result of a snippet call if a phx expression is true
  * reason:      PHx has one big problem with 'then' or 'else' constructs because the modx-parser
  *              inserts all (visible) chunks at the beginning of the parsing process.
@@ -14,18 +14,18 @@
 global $modx;
 
 $conditional = implode(' ', $condition);
-$isvalid = intval(eval("return (".$conditional.");"));
+$isvalid = intval(eval("return (" . $conditional . ");"));
 if (!$isvalid) {
-    $params = explode('|', $options, 2);
-    $snippetName = $params[0];
-    $params = explode('|', $params[1]);
-    $snippetParams = array();
-    foreach ($params as $param) {
-        $param = explode(':', $param);
-        if (isset($param[1]))
-            $snippetParams[$param[0]] = $param[1];
-    }
-    $output = $modx->runSnippet($snippetName, $snippetParams);
+	$params = explode('|', $options, 2);
+	$snippetName = $params[0];
+	$params = explode('|', $params[1]);
+	$snippetParams = array();
+	foreach ($params as $param) {
+		$param = explode(':', $param);
+		if (isset($param[1]))
+			$snippetParams[$param[0]] = $param[1];
+	}
+	$output = $modx->runSnippet($snippetName, $snippetParams);
 }
 return $output;
 ?>

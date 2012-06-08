@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * description: Returns the content of a chunk if a phx expression is true
  * reason:      PHx has one big problem with 'then' or 'else' constructs because the modx-parser 
  *              inserts all (visible) chunks at the beginning of the parsing process. 
@@ -14,11 +14,11 @@
 global $modx;
 
 $conditional = implode(' ', $condition);
-$isvalid = intval(eval("return (".$conditional.");"));
+$isvalid = intval(eval("return (" . $conditional . ");"));
 if ($isvalid) {
-    $output = $modx->getChunk($options);
+	$output = $modx->getChunk($options);
 } else {
-    $output = NULL;
+	$output = NULL;
 }
 return $output;
 ?>

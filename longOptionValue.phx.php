@@ -6,6 +6,7 @@
  *              template variable
  * usage:       [+value:longOptionValue=`tvname`+]
  */
+
 $result = $modx->db->select('name, elements', $modx->getFullTableName('site_tmplvars'));
 $members = $modx->db->makeArray($result);
 foreach ($members as $member) {

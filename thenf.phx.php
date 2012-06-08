@@ -1,5 +1,5 @@
-<?php 
-/* 
+<?php
+/*
  * description: Returns the content of a file if a phx expression is true
  * reason:      PHx has one big problem with 'then' or 'else' constructs because the modx-parser
  *              inserts all chunks at the beginning of the parsing process.
@@ -14,24 +14,24 @@
 global $modx;
 
 $conditional = implode(' ', $condition);
-$isvalid = intval(eval("return (".$conditional.");"));
+$isvalid = intval(eval("return (" . $conditional . ");"));
 $filename = trim($options);
 if ($isvalid) {
-    if (! empty($filename)) {
-        $filename = MODX_BASE_PATH.$filename;
-        if (!function_exists('file_get_contents')) {
-            $fhandle = fopen($filename, "r");
-            $fcontents = fread($fhandle, filesize($filename));
-            fclose($fhandle);
-        } else {
-            $fcontents = file_get_contents($filename);
-        }
-        $output = $fcontents;
-    } else {
-        $output = '';
-    }
+	if (!empty($filename)) {
+		$filename = MODX_BASE_PATH . $filename;
+		if (!function_exists('file_get_contents')) {
+			$fhandle = fopen($filename, "r");
+			$fcontents = fread($fhandle, filesize($filename));
+			fclose($fhandle);
+		} else {
+			$fcontents = file_get_contents($filename);
+		}
+		$output = $fcontents;
+	} else {
+		$output = '';
+	}
 } else {
-    $output = NULL;
+	$output = NULL;
 }
 return $output;
 ?>
