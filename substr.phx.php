@@ -6,9 +6,14 @@
 
 if (strlen($options) > 0) {
 	$data = explode(",", trim($options), 2);
-	$start = (!empty($data[0]) && is_numeric($data[0])) ? $data[0] : 0;
-	$length = (!empty($data[1])) ? $data[1] : 0;
-	$result = substr($output, $start, $length);
-	return $result;
+	$start = (!empty($data[0])) ? intval($data[0]) : 0;
+	if (!empty($data[1])) {
+		$result = substr($output, $start, intval($data[1]));
+	} else {
+		$result = substr($output, $start);
+	}
+} else {
+	$result = $output;
 }
+return $result;
 ?>
