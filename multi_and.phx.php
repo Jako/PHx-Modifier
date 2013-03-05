@@ -1,6 +1,6 @@
 <?php 
 /* 
- * description: the values in a comma separated list are joined by a boolean AND
+ * description: will be set to true if all values in a comma separated list are true (not eqal 0 or empty string)
  * usage: [+phx:multi_and=`[+value1+],[+value2+]`:then=`one is true`+]
  */
 

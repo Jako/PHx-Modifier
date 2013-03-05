@@ -1,6 +1,6 @@
 <?php
 /*
- * description: returns daterange
+ * description: returns daterange by removing equal days and months (and years - by showing only the start date)
  * usage: [+phx:input=`[+start+]-[+end+]`:daterange=`%d.|%m.|%Y`+]
  * format: each part of the date (separated by '|') could be formatted by strftime placeholder
  */

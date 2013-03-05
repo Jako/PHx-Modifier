@@ -1,6 +1,6 @@
 <?php
 /*
- * description: returns a substring of the placeholder
+ * description: returns a substring of a string
  * usage: [+string:substr=`0,-3`+] - cuts the last three chars of the placeholder
  */
 

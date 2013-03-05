@@ -1,7 +1,6 @@
 <?php
 /*
- * description: swich for PHx
- * reason:      The internal select modifier of PHx does not provide a default option
+ * description: switch for PHx. The internal select modifier of PHx does not provide a default option
  * usage:       [+string:switch=`xx:{{Chunk}}|yy:[*DocVar*]|default:[+TemplateVar+]+]
  */
 

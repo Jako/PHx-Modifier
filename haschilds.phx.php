@@ -1,6 +1,6 @@
 <?php
 /*
- * description: condition will be set to true if the id has childs
+ * description: (conditional) will be set to true if the id has childs
  * usage: [+id:haschilds:then=`…`:else=`…`+]
  */
 

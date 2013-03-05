@@ -1,7 +1,6 @@
 <?php
 /*
- * description: iterate counter for PHx
- * reason:      for snippets that have not an iteration counter
+ * description: iteration counter for PHx for snippets that have not an iteration counter
  * usage:       [+phx:iterate=`countername`+]
  */
 

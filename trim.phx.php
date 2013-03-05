@@ -1,6 +1,6 @@
 <?php
 /*
- * description: trims the placeholder. Optionally, the stripped characters can be specified in the options of the modifier
+ * description: trims a string. Stripped characters could be specified in the options of the modifier.
  * usage: [+string:trim=`strippedCharakters`+]
  */
 

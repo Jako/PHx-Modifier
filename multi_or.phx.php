@@ -1,6 +1,6 @@
 <?php 
 /*  
- * description: the values in a comma separated list are joined by a boolean OR
+ * description: will be set to true if one value in a comma separated list is true (not eqal 0 or empty string)
  * usage: [+phx:multi_or=`[+value1+],[+value2+]`:then=`one is true`+]
  */
 

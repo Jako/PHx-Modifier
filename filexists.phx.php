@@ -1,6 +1,6 @@
 <?php
 /*
- * description: condition will be set to true if the file exists
+ * description: (conditional) will be set to true if the file exists
  * usage: [+filename:fileexists:then=`whatever`+]
  */
 

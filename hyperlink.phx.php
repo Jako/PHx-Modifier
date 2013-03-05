@@ -1,6 +1,6 @@
 <?php
 /*
- * description: surrounds the placeholder by an <a>-tag
+ * description: surround not empty string by an a-tag
  * usage: [+string:hyperlink+]
  */
 

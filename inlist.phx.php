@@ -1,6 +1,6 @@
 <?php
 /*
- * description: compares input with the members of a comma separated list
+ * description: will be set to true if the string is a members of a comma separated list
  * usage: [+string:inlist=`text1,text2`:then=`contained`+]
  */
 

@@ -1,6 +1,6 @@
 <?php
 /*
- * description: checks if the string is numeric
+ * description: will be set to true if the string is not numeric
  * usage: [+string:isnotnumeric:then=`xxx`:else=`yyy`+]
  */
 

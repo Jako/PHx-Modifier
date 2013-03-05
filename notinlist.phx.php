@@ -1,6 +1,6 @@
 <?php 
 /*
- * description: compares input with the members of a comma separated list
+ * description: will be set to true if the string is not a members of a comma separated list
  * usage: [+string:notinlist=`text1,text2`:then=`not contained`+]
  */
 

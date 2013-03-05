@@ -1,6 +1,6 @@
 <?php
 /*
- * description: replaces a string in the placeholder
+ * description: replaces a string by another string
  * usage: [+string:str_replace=`search|replace`+]
  */
 

@@ -1,7 +1,7 @@
 <?php
 /*
  * description: returns id from a given alias (should be unique) or a default value
- * limitations: does not work with duplicated aliases
+ * limitations: returns the first id for duplicate aliases
  * usage: [+alias:aliasid=`default`+]
  */
 
