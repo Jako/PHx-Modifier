@@ -37,6 +37,7 @@ multi_and | **(conditional)** will be set to true if all values in a comma separ
 multi_or | **(conditional)** will be set to true if one value in a comma separated list is true (not eqal 0 or empty string).
 outer | surround not empty string with text.
 str_replace | replaces a string by another string.
+striphtml | strip html tags (but no MODX tags).
 strptime | parses a string into unixtime with a format string.
 strtotime | strtotime a string into unixtime.
 substr | returns a substring of a string.
