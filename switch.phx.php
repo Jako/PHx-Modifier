@@ -7,7 +7,7 @@
 $switches = explode('|', $options);
 $default = '';
 foreach ($switches as $switch) {
-	$switch = explode(':', $switch);
+	$switch = explode(':', $switch, 2);
 	if ($switch[0] == $output) {
 		return $switch[1];
 	} elseif ($switch[0] == 'default') {
