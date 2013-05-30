@@ -32,6 +32,7 @@ inlist | **(conditional)** Will be set to true if the string is a members of a c
 isnumeric | **(conditional)** Will be set to true  if the string is numeric.
 isnotnumeric | **(conditional)** Will be set to true  if the string is not numeric.
 iteration  | Iteration counter for PHx for snippets that have not an iteration counter.
+jsonencode | Returns the JSON representation of the string. Outer quotes could be removed by option.
 longOptionValue | Retreives the 'long' leftside option value for a select/checkbox/radio template variable.
 notinlist | **(conditional)** Will be set to true if the string is not a members of a comma separated list.
 multi_and | **(conditional)** Will be set to true if all values in a comma separated list are true (not eqal 0 or empty string).
