@@ -1,7 +1,7 @@
 <?php
 /*
  * description: iteration counter for PHx for snippets that have not an iteration counter
- * usage:       [+phx:iterate=`countername`+]
+ * usage:       [+phx:iteration=`countername`+]
  */
 
 $countername = ($options) ? 'phx_' . $options : 'phx_iterate_counter';
