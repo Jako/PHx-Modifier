@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
  * description: surround not empty string with text
  * usage: [+string:outer=`before|after`+]
@@ -13,5 +13,4 @@ if (trim($output) != '') {
 } else {
     return '';
 }
-;
 ?>

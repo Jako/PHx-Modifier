@@ -19,9 +19,12 @@ Modifier | Description
 ago | Returns a pretty date format in seconds, minutes, weeks or months ago. Takes in unixtime.
 aliasid | Returns id from a given alias (should be unique) or a default value. Returns the first id for duplicate aliases.
 cdata | Surround not empty string with cdata tag. closing tag has to be replaced by a plugin – otherwise it is detected as closing snippet tag and will be removed by PHx.
+countlist | counts the members of a comma separated list.
 date_ger | Returns german formatted date.
 daterange | Returns daterange by removing equal days and months (and years – by showing only the start date). Takes in two unixtime numbers separated by `-`.
 default | Returns a default value if a string is empty.
+docfield | Returns a document field (defaults to pagetitle) of a given docid.
+doclevel | Returns the doclevel of a given docid.
 elsec | Returns the content of a chunk if a phx expression is false – Since PHx surpresses only the output of the then/else branch this modifier could solve issues caused by this behaviour.
 elsef | Returns the content of a file if a phx expression is false – Since PHx surpresses only the output of the then/else branch this modifier could solve issues caused by this behaviour.
 elses | Returns the result of a snippet call if a phx expression is true – Since PHx surpresses only the output of the then/else branch this modifier could solve issues caused by this behaviour.
@@ -29,15 +32,18 @@ fileexists | **(conditional)** Will be set to true if the file exists
 haschilds | **(conditional)** Will be set to true if the id has childs.
 hyperlink | Surrounds not empty string by an a tag.
 inlist | **(conditional)** Will be set to true if the string is a members of a comma separated list.
-isnumeric | **(conditional)** Will be set to true  if the string is numeric.
-isnotnumeric | **(conditional)** Will be set to true  if the string is not numeric.
+ismanager | **(conditional)** Will be set to true if user is logged into manager.
+isnumeric | **(conditional)** Will be set to true if the string is numeric.
+isnotnumeric | **(conditional)** Will be set to true if the string is not numeric.
 iteration  | Iteration counter for PHx for snippets that have not an iteration counter.
 jsonencode | Returns the JSON representation of the string. Outer quotes could be removed by option.
 longOptionValue | Retreives the 'long' leftside option value for a select/checkbox/radio template variable.
 notinlist | **(conditional)** Will be set to true if the string is not a members of a comma separated list.
 multi_and | **(conditional)** Will be set to true if all values in a comma separated list are true (not eqal 0 or empty string).
 multi_or | **(conditional)** Will be set to true if one value in a comma separated list is true (not eqal 0 or empty string).
+number_format | number format a string.
 outer | Surround not empty string with text.
+preg_replace | preg_replace a string.
 str_replace | Replaces a string by another string.
 striphtml | Strip html tags (but no MODX tags).
 strptime | Parses a string into unixtime with a format string.
