@@ -29,7 +29,9 @@ elsec | Returns the content of a chunk if a phx expression is false – Since PH
 elsef | Returns the content of a file if a phx expression is false – Since PHx surpresses only the output of the then/else branch this modifier could solve issues caused by this behaviour.
 elses | Returns the result of a snippet call if a phx expression is true – Since PHx surpresses only the output of the then/else branch this modifier could solve issues caused by this behaviour.
 fileexists | **(conditional)** Will be set to true if the file exists
+firstchild | Returns the id of the first child of a resource with a specified level.
 haschilds | **(conditional)** Will be set to true if the id has childs.
+hasfirstchild | **(conditional)**  Will be set to true if the id has firstchild with a specified level.
 hyperlink | Surrounds not empty string by an a tag.
 inlist | **(conditional)** Will be set to true if the string is a members of a comma separated list.
 ismanager | **(conditional)** Will be set to true if user is logged into manager.
