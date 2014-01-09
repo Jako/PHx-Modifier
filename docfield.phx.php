@@ -6,6 +6,13 @@
  */
 
 $field = (strlen($options) > 0) ? $options : 'pagetitle';
-$docfield = $modx->getTemplateVarOutput(array($field), $output, 1);
-return $docfield[$field];
+if ($output != '') {
+	$docfield = $modx->getTemplateVarOutput(array($field), $output, 1);
+	if (is_array($docfield) && isset($docfield[$field])) {
+		$output = $docfield[$field];
+	} else {
+		$output = '';
+	}
+}
+return $output;
 ?>
