@@ -7,4 +7,3 @@ if (empty($output)) {
 	$output = $options;
 }
 return $output;
-?>

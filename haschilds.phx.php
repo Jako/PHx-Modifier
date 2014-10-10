@@ -6,4 +6,3 @@
 
 $children = $modx->getChildIds($output, 1);
 $condition[] = (count($children) > 0) ? 1 : 0;
-?>

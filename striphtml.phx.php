@@ -5,4 +5,3 @@
  */
 
 return(strip_tags($output, $options));
-?>

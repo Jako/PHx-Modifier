@@ -7,4 +7,3 @@
 
 $ismanager = ($_SESSION['usertype'] === 'manager') ? '1' : '0';
 return $ismanager;
-?>

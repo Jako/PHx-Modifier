@@ -32,4 +32,3 @@ if (!$isvalid) {
 	}
 }
 return $output;
-?>

@@ -25,4 +25,3 @@ foreach ($members as $member) {
 	}
 }
 return $output;
-?>

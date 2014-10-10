@@ -6,4 +6,3 @@
 
 $condition[] = intval(file_exists(MODX_BASE_PATH . $output));
 return;
-?>

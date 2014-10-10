@@ -9,4 +9,3 @@ if (substr($output, 0, 7) == "http://")
 if ($output != '')
 	$output = '<a href="http://' . $output . '">' . $output . '</a>';
 return $output;
-?>

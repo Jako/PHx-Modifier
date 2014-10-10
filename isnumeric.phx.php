@@ -6,4 +6,3 @@
 
 $condition[] = (is_numeric($output)) ? '1' : '0';
 return;
-?>

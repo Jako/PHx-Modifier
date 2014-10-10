@@ -11,4 +11,3 @@ if (strlen($options) > 0) {
 	$result = str_replace($search, $replace, $output);
 	return $result;
 }
-?>

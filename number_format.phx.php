@@ -15,4 +15,3 @@ if (!trim($output)) {
 } else {
 	return '';
 }
-?>

@@ -7,4 +7,3 @@
 
 $docid = ($output) ? $output : $modx->documentObject['id'];
 return count($modx->getParentIds($docid));
-?>

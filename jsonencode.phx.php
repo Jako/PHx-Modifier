@@ -11,4 +11,3 @@ if ($stripquotes) {
 	$output = trim($output, '"');
 }
 return $output;
-?>

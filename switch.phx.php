@@ -15,4 +15,3 @@ foreach ($switches as $switch) {
 	}
 }
 return $default;
-?>

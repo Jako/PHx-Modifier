@@ -34,4 +34,3 @@ if ($isvalid) {
 	$output = NULL;
 }
 return $output;
-?>

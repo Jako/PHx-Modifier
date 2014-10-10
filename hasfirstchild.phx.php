@@ -28,4 +28,3 @@ if (!function_exists('firstlevelchild')) {
 
 $firstLevelChild = firstlevelchild($output, -$level);
 $condition[] = ($firstLevelChild) ? 1 : 0;
-?>

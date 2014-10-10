@@ -5,12 +5,10 @@
  * usage: [+alias:aliasid=`default`+]
  */
 
-$sc = $this->getFullTableName("site_content");
-$result = $modx->db->select('*', $sc, 'alias ="' . $output . '" AND published="1" AND deleted="0"');
+$result = $modx->db->select('*', $modx->getFullTableName("site_content"), 'alias ="' . $output . '" AND published="1" AND deleted="0"');
 if ($modx->db->getRecordCount($result) >= 1) {
-	$id = $modx->db->getRow($result);
-	return $id['id'];
+    $id = $modx->db->getRow($result);
+    return $id['id'];
 } else {
-	return $options;
+    return $options;
 }
-?>

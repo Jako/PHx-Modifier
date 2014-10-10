@@ -16,4 +16,3 @@ if (strlen($options) > 0) {
 	$result = $output;
 }
 return $result;
-?>

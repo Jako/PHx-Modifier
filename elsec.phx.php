@@ -19,4 +19,3 @@ if (!$isvalid) {
 	$output = $modx->getChunk($options);
 }
 return $output;
-?>

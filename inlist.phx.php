@@ -7,4 +7,3 @@
 $list = explode(",", $options);
 $condition[] = intval(in_array($output, $list));
 return;
-?>

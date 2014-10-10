@@ -5,4 +5,3 @@
  */
 
 return trim($output, $options);
-?>

@@ -6,7 +6,6 @@
  */
 
 $outer = '';
- 
-if (trim($output) != '') $outer = '<![CDATA['.$output.'] ]>';
+
+if (trim($output) != '') $outer = '<![CDATA[' . $output . '] ]>';
 return $outer;
-?>

@@ -14,4 +14,3 @@ foreach ($options as $option) {
 }
 $condition[] = $ok;
 return;
-?>

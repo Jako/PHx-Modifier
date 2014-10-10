@@ -42,4 +42,3 @@ if (isset($dates[1]) && !empty($dates[1])) {
 	$output = strftime($format[0] . $format[1] . $format[2], 0 + $dates[0]);
 }
 return $output;
-?>

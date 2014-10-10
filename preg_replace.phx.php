@@ -11,4 +11,3 @@ if (trim($output) != '') {
 	$replaced = preg_replace($options[0], $options[1], $output);
 }
 return $replaced;
-?>

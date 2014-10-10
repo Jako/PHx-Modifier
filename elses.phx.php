@@ -28,4 +28,3 @@ if (!$isvalid) {
 	$output = $modx->runSnippet($snippetName, $snippetParams);
 }
 return $output;
-?>

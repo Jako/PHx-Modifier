@@ -10,4 +10,3 @@ if ($output == '') {
 } else {
 	return count($list);
 }
-?>

@@ -12,4 +12,3 @@ if (isset($GLOBALS[$countername])) {
 	$GLOBALS[$countername] = 0;
 }
 return $GLOBALS[$countername];
-?>
